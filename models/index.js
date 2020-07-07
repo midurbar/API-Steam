@@ -1,5 +1,5 @@
 const sequelize= require('./db');
-const Poblacion= require('./steam.js');
+const Steam= require('./steam.js');
 
 //Comentario porque si
 sequelize
