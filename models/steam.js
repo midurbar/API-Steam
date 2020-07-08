@@ -5,6 +5,6 @@ const Steam = sequelize.define('steam', {
     codigo:{type: Sequelize.INTEGER, primaryKey: true},
     nombre: Sequelize.STRING,
     tipo: Sequelize.STRING,
-    precio: Sequelize.DECIMAL(3,2)
+    precio: Sequelize.DECIMAL(5,2)
 });
   module.exports = Steam;
