@@ -61,7 +61,7 @@ app.put("/steam/:codigo", function (req, res) {
 //Elimina un juego de la BD a trsaves de su codigo
 app.delete("/steam/:codigo", function (req, res) {
     const {codigo} = req.params;
-    Steam.findOne({where: {id}})
+    Steam.findOne({where: {codigo}})
     .then(steam => {
         if (steam) {
             steam.destroy()
